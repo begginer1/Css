@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100vh;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.1),rgba(0,0,0,0.1)),
+    url("https://wallpapers.com/images/hd/super-mario-background-vbep44x7ca67u2vn.jpg");
+  background-repeat: no-repeat;
+}
+
+img {
+    bottom: 0;
+    position: absolute;
+    animation: mariorun 2.5s linear infinite;
+  }
+  
+  @keyframes mariorun {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(calc(100vw - 200px));
+    }
+  }
+
+
